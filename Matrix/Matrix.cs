@@ -6,22 +6,27 @@
 //{
 //    internal class Matrix
 //    {
-//        static void Main()
+//         static void Main()
 //        {
-//            int[] a = new int[10];
-//            int i, sum = 0;
-//            for (i = 0; i < a.Length; i++)
+//            int[,] matrix = new int[3, 3];
+//            Console.WriteLine("Enter elements of the matrix:");
+//            for (int i = 0; i < 3; i++)
 //            {
-//                Console.WriteLine($"Enter {i + 1} element of array:");
-//                a[i] = Convert.ToInt32(Console.ReadLine());
+//                for (int j = 0; j < 3; j++)
+//                {
+//                    Console.Write($"Element [{i + 1},{j + 1}]: ");
+//                    matrix[i, j] = Convert.ToInt32(Console.ReadLine());
+//                }
 //            }
-//            Console.WriteLine("Array elements are:");
-//            for (i = 0; i < a.Length; i++)
+//            Console.WriteLine("The matrix is:");
+//            for (int i = 0; i < 3; i++)
 //            {
-//                Console.WriteLine($"{a[i]}");
-//                sum += a[i];
+//                for (int j = 0; j < 3; j++)
+//                {
+//                    Console.Write(matrix[i, j] + "\t");
+//                }
+//                Console.WriteLine();
 //            }
-//            Console.WriteLine($"Sum of array elements is: {sum}");
 //        }
 //    }
 //}
