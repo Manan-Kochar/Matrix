@@ -1,10 +1,10 @@
 ﻿//using System;
 //using System.Collections.Generic;
 //using System.Text;
-////Transpose of a matrix 
+////printing right diagonal elements of a matrix
 //namespace Matrix
 //{
-//    internal class Queston1
+//    internal class Question2
 //    {
 //        static void Main()
 //        {
@@ -18,14 +18,10 @@
 //                    matrix[i, j] = Convert.ToInt32(Console.ReadLine());
 //                }
 //            }
-//            Console.WriteLine("The transpose of the matrix is:");
+//            Console.WriteLine("The right diagonal elements of the matrix are:");
 //            for (int i = 0; i < 3; i++)
 //            {
-//                for (int j = 0; j < 3; j++)
-//                {
-//                    Console.Write(matrix[j, i] + "\t");
-//                }
-//                Console.WriteLine();
+//                Console.Write(matrix[i, 2 - i] + "\t");
 //            }
 //        }
 //    }
